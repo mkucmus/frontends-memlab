@@ -1,0 +1,20 @@
+{
+  "name": "frontends-memleak-finder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cd node_modules/memlab && pnpm i",
+    "test:cart": "node ./scenarios/cart.js",
+    "test:cms": "node ./scenarios/summer-bbq.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "memlab": "^1.1.28"
+  },
+  "engines": {
+    "node": ">=16.15.1"
+  }
+}
